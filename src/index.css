@@ -1,13 +1,58 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.add-edit-page form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.products-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 25px;
+  column-gap: 25px;
+  margin-top: 50px;
+}
+
+.product-card-image {
+  object-fit: contain !important;
+}
+
+.product-card-description {
+  height: 40px;
+  overflow: hidden;
+}
+
+.product-card-collapse {
+  position: relative;
+  top: 0;
+}
+
+.filters-block {
+  display: grid;
+  grid-template-columns: 250px 200px 200px 150px;
+  column-gap: 25px;
+  align-items: center;
+}
+
+.filters-block button {
+  margin-top: 18px;
+}
+
+.my-pagination {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0px;
 }
